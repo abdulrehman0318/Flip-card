@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/index.css">
+
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="card" onclick="rotateCard()">
+      <div class="front">
+        <h2>Pakistan</h2>
+      </div>
+      <div class="back">
+        <ul>
+          <li><p>Babar Azam (Captain)</p></li>
+          <li><p>Shaheen Shah</p></li>
+          <li><p>Rizvan</p></li>
+          <li><p>Imam-ul-Haq</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card1" onclick="rotateCard1()">
+      <div class="front">
+        <h2>India</h2>
+      </div>
+      <div class="back">
+        <ul>
+          <li><p>Rohit sharma</p></li>
+          <li><p>Hardik</p></li>
+          <li><p>Kl Rahul</p></li>
+          <li><p>Virat Kohli</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card2" onclick="rotateCard2()">
+      <div class="front">
+        <h2>Australia</h2>
+      </div>
+      <div class="back">
+        <ul>
+          <li><p>David Warner</p></li>
+          <li><p>Steve Smith</p></li>
+          <li><p>Pat Cummins</p></li>
+          <li><p>Travis Head</p></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="assets/js/script.js"></script>
+    <script>
+      function rotateCard() {
+  const card = document.querySelector('.card');
+  card.classList.toggle('is-flipped');
+}
+
+function rotateCard1() {
+  const card = document.querySelector('.card1');
+  card.classList.toggle('is-flipped');
+}
+
+function rotateCard2() {
+  const card = document.querySelector('.card2');
+  card.classList.toggle('is-flipped');
+}
+    </script>
+  </body>
+</html>
